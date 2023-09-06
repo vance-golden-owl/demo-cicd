@@ -228,6 +228,15 @@ GEM
       websocket (~> 1.0)
     shoulda-matchers (5.3.0)
       activesupport (>= 5.2.0)
+    simple_form (5.2.0)
+      actionpack (>= 5.2)
+      activemodel (>= 5.2)
+    simple_form-tailwind (0.1.1)
+      railties (>= 4.0)
+      simple_form (>= 5.0)
+    slim (5.1.1)
+      temple (~> 0.10.0)
+      tilt (>= 2.1.0)
     sprockets (4.2.1)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
@@ -240,7 +249,9 @@ GEM
     stringio (3.0.8)
     tailwindcss-rails (2.0.30-x86_64-darwin)
       railties (>= 6.0.0)
+    temple (0.10.2)
     thor (1.2.2)
+    tilt (2.2.0)
     timeout (0.4.0)
     turbo-rails (1.4.0)
       actionpack (>= 6.0.0)
@@ -285,6 +296,9 @@ DEPENDENCIES
   rubocop
   selenium-webdriver
   shoulda-matchers (~> 5.0)
+  simple_form
+  simple_form-tailwind
+  slim
   sprockets-rails
   stimulus-rails
   tailwindcss-rails

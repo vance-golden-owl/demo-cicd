@@ -4,7 +4,6 @@ class CreateTasks < ActiveRecord::Migration[7.0]
       t.string :name, null: false
       t.text :body
       t.string :status, null: false, default: 'ongoing'
-      t.datetime :expired_at
 
       t.timestamps
     end

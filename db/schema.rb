@@ -18,7 +18,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_06_041944) do
     t.string "name", null: false
     t.text "body"
     t.string "status", default: "ongoing", null: false
-    t.datetime "expired_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

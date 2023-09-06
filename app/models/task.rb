@@ -4,7 +4,6 @@
 #
 #  id         :bigint           not null, primary key
 #  body       :text
-#  expired_at :datetime
 #  name       :string           not null
 #  status     :string           default("ongoing"), not null
 #  created_at :datetime         not null

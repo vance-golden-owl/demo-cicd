@@ -1,0 +1,22 @@
+= simple_form_for task do |f|
+  .grid.gap-2.grid-cols-3
+    = f.input :name,
+              label: false,
+              input_html: { class: 'w-full' },
+              wrapper_html: { class: 'col-span-2' },
+              placeholder: 'Task name (required)'
+
+    = f.input :status,
+              label: false,
+              input_html: { class: 'w-full' },
+              include_blank: false
+
+    = f.input :body,
+              label: false,
+              input_html: { class: 'w-full' },
+              wrapper_html: { class: 'col-span-3' },
+              placeholder: 'Task description'
+
+  .flex.gap-4.mt-2
+    = f.submit 'Add', class: 'px-8 py-2 bg-blue-500 hover:bg-blue-700 text-white rounded-lg'
+    = link_to 'Cancel', tasks_path, class: 'bg-gray-200 px-8 py-2 rounded-lg'

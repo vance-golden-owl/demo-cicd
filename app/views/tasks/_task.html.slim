@@ -1,0 +1,14 @@
+= turbo_frame_tag "edit-task-#{task.id}"
+  .flex.flex-col.gap-2
+    .flex.items-center.justify-between
+      .text-xl.font-bold
+        = [task.name, task.status_text].join(" - ")
+      .flex.items-center.gap-4
+        = link_to 'Edit', edit_task_path(task), class: 'bg-gray-200 px-8 py-2 rounded-lg'
+        = button_to 'Destroy', task_path(task), method: :delete, data: { turbo_confirm: 'This action is irreversible, are you sure?', turbo_frame: '_top' }, class: 'bg-red-500 text-white px-6 py-2 rounded-lg'
+
+    p.w-full.border.border-gray-300.rounded-lg.p-4
+      - if task.body.blank?
+        = '<insert your task description here>'
+      - else
+        = task.body
